@@ -68,7 +68,7 @@
       font-extrabold mt-4 text-focus-in"></blockquote>
       <img class="my-8 hidden md:block" src="./images/pattern-divider-desktop.svg" alt="icon-dice">
       <img class="my-8 hidden max-md:block" src="./images/pattern-divider-mobile.svg" alt="icon-dice">
-      <button onClick="diceClick()" class="group rounded-full p-4 bg-neonGreen absolute 
+      <button id="btnDice" onClick="diceClick()" class="group rounded-full p-4 bg-neonGreen absolute 
         bottom-[-28px] left-[50%] translate-x-[-50%]
         hover:shadow-[0_0_20px_4px_rgba(45,255,196,0.9)] transition-all duration-300">
         <img src="./images/icon-dice.svg" class="group-hover:rotate-12 transition-all duration-300" alt="icon-dice">
@@ -78,6 +78,7 @@
   <script>
     const adviceId = document.getElementById("adviceId")
     const preview = document.getElementById("preview")
+    const btnDice = document.getElementById("btnDice")
 
     async function fetchAdvice() {
       try {
@@ -103,8 +104,10 @@
     }
 
     async function init() {
+      btnDice.disabled = true
       const { slip: { advice, id } } = await fetchAdvice()
       setPreview(advice, id)
+      btnDice.disabled = false
     }
     init()
   </script>
