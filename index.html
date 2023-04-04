@@ -112,8 +112,11 @@
         const { slip: { advice, id } } = data 
         setPreview(advice, id)
       }
-      btnDice.disabled = false
+      setTimeout(()=> {
+        btnDice.disabled = false
+      }, 1200)
     }
+
     init()
   </script>
 </body>
