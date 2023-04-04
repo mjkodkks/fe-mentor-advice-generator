@@ -25,7 +25,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/mjkodkks/fe-mentor-advice-generator](https://github.com/mjkodkks/fe-mentor-advice-generator)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://mjkodkks.github.io/fe-mentor-advice-generator](https://mjkodkks.github.io/fe-mentor-advice-generator/)
 
 ## My process
 - Done
