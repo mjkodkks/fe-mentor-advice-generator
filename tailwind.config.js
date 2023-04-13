@@ -1,0 +1,1 @@
+ // Emptry tailwind.config.js file use for autocomplete works in tailwindcss cdn mode.
